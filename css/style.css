@@ -1,0 +1,160 @@
+* { box-sizing: border-box; }
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.home-wrapper {
+	background: url('../images/background.jpg') no-repeat center top;
+	background-size: cover;
+	color: white;
+}
+
+header {
+	position: fixed;
+	padding: 10px 0;
+	width: 100%;
+	background-color: rgba(48, 48, 48, 0.5);
+}
+
+header img {
+	width: 200px;
+}
+
+header nav	{
+	float: right;
+	margin-top: 10px;
+}
+
+header nav a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 10px 15px;
+}
+
+header nav a.active {
+	background: #a34323;
+	border-radius: 3px;
+}
+
+#home {
+	text-align: center;
+	padding: 200px 0 150px;
+}
+#home h1 {
+	font-size: 68px;
+	font-weight: normal;
+}
+
+#home p {
+	font-size: 24px;
+}
+
+#home .social {
+	margin-top: 80px;
+}
+
+#home .social a {
+	color: white;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #962d41;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+#home .social a:hover {
+	background-color: #a34323;
+}
+
+#Contacto {
+	background-image: url('../images/map-image.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+
+}
+
+#Contacto h2 {
+	color: white;
+}
+
+#Contacto input {
+	padding: 20px;
+	width: 400px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+#Contacto textarea {
+	margin: 20px 0;
+	padding: 20px;
+	width: 400px;
+}
+
+#Contacto button {
+	background-color: #f3a37f;
+	padding: 20px 40px;
+	border-color: #f3a37f;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: bold;
+
+}
+
+footer {
+	padding: 90px 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+section {
+	padding: 80px 0;
+}
+
+section h2 {
+	font-size: 32px;
+	text-align: center;
+	margin-right: 80px;
+}
+
+section h3 {
+	font-size: 28px;
+	text-align: center;
+	margin-right: 80px;
+
+}
+
+#cuarentena h2 {
+	background-color: #f3a37f;
+	border-radius: 10px;
+
+}
+
+#cuarentena .box {
+	display: inline-block;
+	text-align: center;
+	width: 33%;
+	background-color: whitesmoke;
+	margin: 1px;
+}
+
+
+.container {
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+
+}
