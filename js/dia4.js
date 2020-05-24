@@ -168,7 +168,9 @@ function puntuacion(){
 //BUCLE PRINCIPAl
 var FPS = 50;
 setInterval(function(){
-	principal();
+	if (typeof canvas !== 'undefined' ) {
+		principal();
+	}
 },1000/FPS);
 
 
