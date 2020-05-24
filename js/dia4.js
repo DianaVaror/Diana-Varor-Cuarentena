@@ -85,14 +85,14 @@ function dibujaSuelo(){
 	ctx.drawImage(imgSuelo,suelog.x,0,700,180,0,suelog.y,700,35);
 }
 
-
-
 function logicaSuelo(){
 	if (suelog.x > 700){
 		suelog.x = 0;
 	}
 	else{
+		//suelog.x = suelog.x + nivel.velocidad
 		suelog.x += nivel.velocidad;
+		
 	}
 }
 
@@ -167,6 +167,10 @@ function puntuacion(){
 
 //BUCLE PRINCIPAl
 var FPS = 50;
+/**
+* Cada 20 milisegundos llama a la funcion principal si canvas existe
+* se ejecuta cuando el documento se carga
+*/
 setInterval(function(){
 	if (typeof canvas !== 'undefined' ) {
 		principal();
