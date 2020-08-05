@@ -1,3 +1,5 @@
+
+//Primero creamos funciones
 function explosion()
 {
     alert("BOOM!!");
@@ -9,21 +11,22 @@ function ganaste()
 }
 
 //1 = Bomba. 0 = No hay bomba
+//segundo declaramos el campo de batalla con una matriz
 var campo = [ [ 1 , 0 , 0 ] ,
               [ 0 , 1 , 0 ] ,
               [ 1 , 0 , 1 ] ];
-
+// creamos otro array donde cesped=0 y bombra=1
 var textos = ["Cesped", "Bomba"];
 
+//tercero declaramos variables para obtener datos de usuario
 var x, y;
 
 alert("Estás en un campo minado\n" +
       "Elije una posición entre el 0 y el 2 para X y para Y");
-
 x = prompt("Posición en X? (entre 0 y 2)");
 y = prompt("Posición en Y? (entre 0 y 2)");
 
-
+//ciclo
 if(x <= 2 && y <= 2)
 {
     var posicion = campo[x][y];
